@@ -1,6 +1,6 @@
 FROM node:23-alpine3.19
-WORKDIR /user/src/Marvin
-COPY package*.json ./
+WORKDIR /usr/src/Marvin
+COPY package*.json ./ 
 RUN npm install
 COPY . .
 EXPOSE 3000
